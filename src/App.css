@@ -1,0 +1,82 @@
+.App {
+  background: linear-gradient(blue, pink);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  height: 6rem;
+  width: 100%;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background: rgb(149, 170, 180);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform:rotate(359deg);
+  }
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+.logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 60%;
+  border: 3px solid;
+  animation: rotation 2s linear infinite;
+}
+
+.title {
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-family: cursive;
+}
+
+.footer {
+  height: 4rem;
+  width: 100%;
+  border-top: 2px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background: rgb(149, 170, 180);
+  position: relative;
+}
+
+.text-input {
+  width: 60%;
+  border: 1px solid white;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  background: whitesmoke;
+  color: black;
+}
+
+.send {
+  background: white;
+  border-radius: 30%;
+  border: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  right: 31rem;
+  cursor: pointer;
+}
