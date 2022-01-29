@@ -9,7 +9,9 @@ function App() {
       </header>
       <footer className="footer">
         <input className="text-input" />
-        <button className="send">↑</button>
+        <button className="send">
+        <img src="https://image.pngaaa.com/722/946722-middle.png" class="send" />
+        </button>
       </footer>
     </div>
   );
