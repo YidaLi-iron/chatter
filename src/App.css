@@ -10,7 +10,6 @@
 /* Define the background of the header */
 .header {
   height: 6rem;
-  width: 100%;
   border-bottom: 2px solid rgba(204, 204, 204, 0.658);
   display: flex;
   align-items: center;
@@ -60,7 +59,6 @@
 /* Define the background character of the button chatter */
 .footer {
   height: 4rem;
-  width: 100%;
   border-top: 2px solid white;
   display: flex;
   align-items: center;
@@ -91,4 +89,15 @@
   right: 0rem;
   left: -0.3rem;
   cursor: pointer;
+}
+
+.message {
+  border-radius: 1.4rem;
+  display: table;
+  padding:0.8rem;
+  margin:0.5rem;
+  font-size:20px;
+  background-color:black;
+  color:#ffffff;
+  opacity: 0.79;
 }
