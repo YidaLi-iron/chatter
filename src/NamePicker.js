@@ -1,4 +1,7 @@
 import {useState} from "react";
+import {RiEdit2Fill} from 'react-icons/ri';
+import {IoIosCheckmarkCircle} from 'react-icons/io';
+import './App.css';
 
 function NamePicker() {
     const [editName, setEditName] = useState(false);
@@ -23,9 +26,9 @@ function NamePicker() {
         <header className="NamePicker">
         {editName && <input onChange={(e)=>inputChange(e)}
                              className="name-input" />}
-        {!editName && <span>{name}</span>}
-        {!editName && <button className="Edit-button" onClick={reverse}>Edit</button>}
-        {editName && <button onClick={reverse}>OK</button>}
+        {!editName && <span className="name-show">{name}</span>}
+        {!editName && <button className="Edit-button" onClick={reverse}>< RiEdit2Fill style={{height:15, width:15}} /></button>}
+        {editName && <button onClick={reverse}>< IoIosCheckmarkCircle style={{height:15, width:15}} /></button>}
 
         </header>
     );

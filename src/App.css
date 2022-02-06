@@ -15,7 +15,7 @@
   align-items: center;
   padding: 0 1rem;
   background: rgb(109, 109, 109);
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 /* Define the rotating animation effect of the logo */
@@ -99,4 +99,18 @@
   background-color:black;
   color:#ffffff;
   opacity: 0.79;
+}
+
+.name-input {
+  margin:0.5rem;
+  left: 2rem;
+  border-radius: 0.4rem;
+}
+
+.name-show {
+  margin:0.5rem;
+  left: 5rem;
+  font-size: 1.2rem;
+  color: white;
+
 }
