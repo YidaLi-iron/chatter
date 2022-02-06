@@ -1,34 +1,32 @@
 import {useState} from "react";
 
-function NamePicker(props) {
+function NamePicker() {
     const [editName, setEditName] = useState(false);
-    const [name, setName] = useState('');
-    function editing(text) {
-        const newname = {
-            text
-        }
-        setName(text);
-    }
-    function finish() {
-        props.editing(text);
-        setName("");
-    }
+    const [name, setName] = useState('Set Username:');
+
+    // const editing = (text) => setName(text);
+    //
+    // function finish() {
+    //     editing(text);
+    //     setName("");
+    // }
 
     function reverse() {
-        setEditName = !setEditName;
-        setName = document.querySelector('input');
+        setEditName(!editName);
+        // setName(document.getElementById(input-box));
     }
+    
 
+    const inputChange = (e) => setName(e.target.value)
+    
     return (
         <header className="NamePicker">
-        {!editName && <input className="name-input" 
-                value ={text}
-                onChange={(e) => setName(e.target.value)}
-        />}
-        {editName && <input>{name}</input>}
-        {editName && <Button onClick={reverse}>Edit</Button>}
-        {!editName && <Button onClick={reverse}>OK</Button>}
-        
+        {editName && <input onChange={(e)=>inputChange(e)}
+                             className="name-input" />}
+        {!editName && <span>{name}</span>}
+        {!editName && <button className="Edit-button" onClick={reverse}>Edit</button>}
+        {editName && <button onClick={reverse}>OK</button>}
+
         </header>
     );
 
