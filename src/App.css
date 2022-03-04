@@ -99,6 +99,7 @@
   background-color:black;
   color:#ffffff;
   opacity: 0.79;
+  position: relative;
 }
 
 .name-input {
@@ -113,4 +114,26 @@
   font-size: 1.2rem;
   color: white;
 
+}
+
+.message-user {
+  position: absolute;
+  left: 0.3rem;
+  top: -0.8rem;
+  font-size: 0.5rem;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  overflow: auto;
+  flex: 1;
+}
+
+.message-row {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  flex-direction: row;
 }
